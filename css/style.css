@@ -87,13 +87,16 @@ hr {
   align-items: center;
   position: fixed;
   top: 670px;
-  right: 20px;
+  right: -40px;
   background-color: var(--main-color);
   color: white;
   width: 35px;
   height: 35px;
   transition: 0.8s;
   z-index: 1911;
+}
+.scroll-to-top.show {
+  right: 20px;
 }
 .scroll-to-top:hover {
   background-color: var(--main-color-alt);
@@ -1350,11 +1353,11 @@ header .container nav ul li .mega_menu .links ul li a i {
   transition: 1s;
   height: 0;
 }
-.stats .box::before{
+.stats .box::before {
   top: 0;
   left: 0;
 }
-.stats .box::after{
+.stats .box::after {
   bottom: 0;
   right: 0;
 }
